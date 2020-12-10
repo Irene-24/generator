@@ -5,5 +5,5 @@ export async function cli ()
 {
     const options = await askQuestions();
 
-    createProject( options );
+    await createProject( options );
 }
