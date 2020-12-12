@@ -46,16 +46,21 @@ async function editPackageJSON ( options )
 
     fs.readFile( `${ targetDir }/package.json`, function ( err, data )
     {
-        jsonFile = JSON.parse( data );
-        jsonFile.name = options.name;
-
-        fs.writeFileSync( `${ targetDir }/package.json`, JSON.stringify( jsonFile, null, "\t" ), ( err, data ) =>
+        /*If no package.json, this will be skipped*/
+        if ( !err )
         {
-            if ( err )
+            jsonFile = JSON.parse( data );
+            jsonFile.name = options.name;
+
+            fs.writeFileSync( `${ targetDir }/package.json`, JSON.stringify( jsonFile, null, "\t" ), ( err, data ) =>
             {
-                throw new Error( "Unable to update package.json" );
-            }
-        } );
+                if ( err )
+                {
+                    throw new Error( "Unable to update package.json" );
+                }
+            } );
+        }
+
     } );
 }
 
