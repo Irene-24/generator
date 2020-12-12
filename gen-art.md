@@ -556,7 +556,7 @@ async function createProject ( options )
 
 The tasks we need to run are:
 
-1. Copy template files to target files.
+1. Copy template files to target directory.
 
 2. Initialize git, if enabled.
 
