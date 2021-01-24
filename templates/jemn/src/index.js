@@ -1,3 +1,5 @@
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 import { connect } from "mongoose";
 import { port, dbUrl } from "./config";
 import app from "./app";

@@ -17,6 +17,8 @@ Why? Because we can.
 
 Let's get started.
 
+---------------------------------------------------------------
+
 *Disclaimer: A lot of points made in this post drew inspiration from 
  Harriet Ryder's article over on [medium](https://medium.com/northcoders/creating-a-project-generator-with-node-29e13b3cd309) and Dominik Kundel's post on [twilio](https://www.twilio.com/blog/how-to-build-a-cli-with-node-js?utm_source=youtube&utm_medium=video&utm_campaign=node-cli-howto).*
 
